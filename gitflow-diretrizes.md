@@ -1,16 +1,13 @@
 # Roteiro Completo — pf-a1-06-PlayerGold26
 # Todos os 20 comandos Git usados ao longo do ciclo de vida real do repositório
-#
+
 # Arquivos do repo: README.md | git-comandos.md | text.txt | gitflow-diretrizes.md
 # Branch principal: main
 # Remote: https://github.com/PlayerGold26/pf-a1-06-PlayerGold26.git
 # ══════════════════════════════════════════════════════════════════════════════
- 
- 
-# ┌─────────────────────────────────────────────────────────────────────────┐
-# │  FASE 1 — CONFIGURAÇÃO INICIAL DO AMBIENTE                              │
-# │  Comandos: git config · git init · git remote · git clone               │
-# └─────────────────────────────────────────────────────────────────────────┘
+
+# FASE 1 — CONFIGURAÇÃO INICIAL DO AMBIENTE
+# Comandos: git config · git init · git remote · git clone
  
 # [1] git config — antes de qualquer coisa, identificar quem está commitando
 git config --global user.name "PlayerGold26"
@@ -42,10 +39,8 @@ git remote -v
 # origin  https://github.com/PlayerGold26/pf-a1-06-PlayerGold26.git (push)
  
  
-# ┌─────────────────────────────────────────────────────────────────────────┐
-# │  FASE 2 — PRIMEIROS ARQUIVOS E COMMITS NA MAIN                          │
-# │  Comandos: git status · git add · git commit · git push · git log       │
-# └─────────────────────────────────────────────────────────────────────────┘
+# FASE 2 — PRIMEIROS ARQUIVOS E COMMITS NA MAIN
+# Comandos: git status · git add · git commit · git push · git log
  
 # O GitHub criou automaticamente o README.md ao criar o repositório.
 # Se você começou local, crie ele manualmente:
@@ -77,10 +72,8 @@ git log --oneline
 # a1b2c3d (HEAD -> main, origin/main) chore: inicializa repositório com README
  
  
-# ┌─────────────────────────────────────────────────────────────────────────┐
-# │  FASE 3 — CRIANDO O text.txt E PRATICANDO reset E stash                 │
-# │  Comandos: git diff · git reset · git stash                             │
-# └─────────────────────────────────────────────────────────────────────────┘
+# FASE 3 — CRIANDO O text.txt E PRATICANDO reset E stash
+# Comandos: git diff · git reset · git stash
  
 # Criar o text.txt para usar como arquivo de prática dos comandos
  
@@ -156,10 +149,8 @@ git commit -m "chore: demonstra uso do git stash no text.txt"
 git push origin main
  
  
-# ┌─────────────────────────────────────────────────────────────────────────┐
-# │  FASE 4 — CRIANDO O git-comandos.md EM BRANCH DE FEATURE                │
-# │  Comandos: git branch · git checkout · git switch · git merge · git pull│
-# └─────────────────────────────────────────────────────────────────────────┘
+# FASE 4 — CRIANDO O git-comandos.md EM BRANCH DE FEATURE
+# Comandos: git branch · git checkout · git switch · git merge · git pull
  
 # Garantir que a main está atualizada antes de criar a branch
 # [12] git pull — baixar qualquer atualização que exista no remoto
@@ -228,10 +219,8 @@ git log --oneline --graph
 # * 9f8e7d6 chore: inicializa repositório com README
  
  
-# ┌─────────────────────────────────────────────────────────────────────────┐
-# │  FASE 5 — CRIANDO O gitflow-diretrizes.md COM REBASE E CHERRY-PICK      │
-# │  Comandos: git rebase · git cherry-pick · git tag                       │
-# └─────────────────────────────────────────────────────────────────────────┘
+# FASE 5 — CRIANDO O gitflow-diretrizes.md COM REBASE E CHERRY-PICK
+# Comandos: git rebase · git cherry-pick · git tag
  
 # Criar branch para o documento de diretrizes
 # [10] git switch — criar e entrar na branch (forma moderna)
@@ -309,9 +298,7 @@ git push origin main
 git tag -a v1.0 -m "Entrega final — todos os 20 comandos documentados com exemplos e gitflow-diretrizes"
 git push origin v1.0
  
-# ┌─────────────────────────────────────────────────────────────────────────┐
-# │  VERIFICAÇÃO FINAL                                                       │
-# └─────────────────────────────────────────────────────────────────────────┘
+# VERIFICAÇÃO FINAL
  
 # [15] git log — ver o histórico completo e linear do repositório
 git log --oneline --graph --all
@@ -323,19 +310,16 @@ git branch -a
 git remote -v
  
 # Estado final esperado do repositório:
-#
+
 #   main (HEAD)
-#   ├── README.md
-#   ├── text.txt           (4 linhas: teste / nova linha / linha reset / stash teste)
-#   ├── git-comandos.md    (20 comandos com exemplos práticos)
+#   ├── text.txt
+#   ├── git-comandos.md
 #   └── gitflow-diretrizes.md
-#
+
 #   Tags: v1.0
-#
-# ══════════════════════════════════════════════════════════════════════════
+
 # MAPA DE TODOS OS 20 COMANDOS USADOS NESTE ROTEIRO
 # ══════════════════════════════════════════════════════════════════════════
-#
 #  1. git init        → Fase 1  — inicializa o repositório local
 #  2. git clone       → Fase 1  — clona o repo do GitHub
 #  3. git config      → Fase 1  — configura nome e email
