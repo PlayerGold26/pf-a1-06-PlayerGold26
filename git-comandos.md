@@ -4,21 +4,17 @@
 Inicializa um novo repositório Git.
 
 Exemplo 1:
-git init 
+
 
 Exemplo 2:
-git init projeto-git
 
 ---
 
 ## 2. git clone
-Clona um repositório remoto.
 
 Exemplo 1:
-git clone https://github.com/user/repositorio1.git
 
 Exemplo 2:
-git clone https://github.com/user/repositorio2.git
 
 ---
 
@@ -26,10 +22,8 @@ git clone https://github.com/user/repositorio2.git
 Configura informações do Git.
 
 Exemplo 1:
-git config --global user.name "PlayerGold26"
 
 Exemplo 2:
-git config --global user.email "eduardopascotiniterra@email.com"
 
 ---
 
@@ -37,10 +31,8 @@ git config --global user.email "eduardopascotiniterra@email.com"
 Mostra o estado atual do repositório.
 
 Exemplo 1:
-git status
 
 Exemplo 2:
-git status -s
 
 ---
 
@@ -48,10 +40,8 @@ git status -s
 Adiciona arquivos para staging.
 
 Exemplo 1:
-git add text.txt
 
 Exemplo 2:
-git add README.md
 
 ---
 
@@ -59,10 +49,8 @@ git add README.md
 Cria um commit.
 
 Exemplo 1:
-git commit -m "feat: adiciona tela de login"
 
 Exemplo 2:
-git commit -m "fix: corrige validação de senha"
 
 ---
 
@@ -70,10 +58,8 @@ git commit -m "fix: corrige validação de senha"
 Mostra diferenças entre arquivos.
 
 Exemplo 1:
-git diff
 
 Exemplo 2:
-git diff --staged
 
 ---
 
@@ -81,10 +67,8 @@ git diff --staged
 Gerencia branches.
 
 Exemplo 1:
-git branch
 
 Exemplo 2:
-git branch develop
 
 ---
 
@@ -92,10 +76,8 @@ git branch develop
 Troca de branch.
 
 Exemplo 1:
-git checkout main
 
 Exemplo 2:
-git checkout -b feature/login
 
 ---
 
@@ -103,10 +85,8 @@ git checkout -b feature/login
 Alternativa moderna ao checkout.
 
 Exemplo 1:
-git switch develop
 
 Exemplo 2:
-git switch -c hotfix/correcao-login
 
 ---
 
@@ -114,10 +94,8 @@ git switch -c hotfix/correcao-login
 Realiza merge entre branches.
 
 Exemplo 1:
-git merge develop
 
 Exemplo 2:
-git merge feature/login
 
 ---
 
@@ -125,10 +103,8 @@ git merge feature/login
 Atualiza o repositório local.
 
 Exemplo 1:
-git pull origin main
 
 Exemplo 2:
-git pull origin develop
 
 ---
 
@@ -136,10 +112,8 @@ git pull origin develop
 Envia commits para o remoto.
 
 Exemplo 1:
-git push origin main
 
 Exemplo 2:
-git push --all origin
 
 ---
 
@@ -155,13 +129,10 @@ git remote -v
 ---
 
 ## 15. git log
-Exibe histórico de commits.
 
 Exemplo 1:
-git log
 
 Exemplo 2:
-git log --oneline --graph
 
 ---
 
@@ -169,10 +140,8 @@ git log --oneline --graph
 Remove alterações do staging ou commits.
 
 Exemplo 1:
-git reset HEAD README.md
 
 Exemplo 2:
-git reset --hard HEAD~1
 
 ---
 
@@ -180,10 +149,8 @@ git reset --hard HEAD~1
 Salva alterações temporariamente.
 
 Exemplo 1:
-git stash
 
 Exemplo 2:
-git stash pop
 
 ---
 
@@ -191,10 +158,8 @@ git stash pop
 Cria tags de versão.
 
 Exemplo 1:
-git tag v1.0.0
 
 Exemplo 2:
-git tag -a v1.0.1 -m "Correção emergencial"
 
 ---
 
@@ -202,18 +167,14 @@ git tag -a v1.0.1 -m "Correção emergencial"
 Reaplica commits de uma branch sobre outra, deixando o histórico mais linear.
 
 Exemplo 1:
-git flow feature start login
 
 Exemplo 2:
-git flow feature start checkin-documentos
 
 ---
 
 ## 20. git cherry-pick
-Cria um hotfix branch no GitFlow.
+Aplica um commit específico de outra branch na branch atual.
 
 Exemplo 1:
-git flow hotfix start 1.0.1
 
 Exemplo 2:
-git flow hotfix start 1.0.2
