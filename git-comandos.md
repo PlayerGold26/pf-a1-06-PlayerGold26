@@ -198,8 +198,8 @@ git tag -a v1.0.1 -m "Correção emergencial"
 
 ---
 
-## 19. git flow feature start
-Cria uma feature branch no GitFlow.
+## 19. git rebase
+Reaplica commits de uma branch sobre outra, deixando o histórico mais linear.
 
 Exemplo 1:
 git flow feature start login
@@ -209,7 +209,7 @@ git flow feature start checkin-documentos
 
 ---
 
-## 20. git flow hotfix start
+## 20. git cherry-pick
 Cria um hotfix branch no GitFlow.
 
 Exemplo 1:
